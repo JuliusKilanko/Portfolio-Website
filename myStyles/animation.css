@@ -1,0 +1,241 @@
+.firstside{
+    width: 650px;
+    height: 100vh;
+    padding-top: 150px;
+}
+.firstside h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.firstside p{
+    /* width: 400px; */
+    font-size: 16px;
+    color: white;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+.wrapper .static-text{
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+}
+#dynamic-text li{
+    list-style: none;
+    color:#ff3c7b;
+    font-size: 50px;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+.wrapper #dynamic-text{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+
+}
+#dynamic-text li{
+    position: relative;
+
+}
+#dynamic-text li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-color:#333 ;
+    width: 100%;
+    animation: typing 3s steps(15) infinite;
+    border-left: 2px solid #ff3c7b;
+}
+
+@keyframes typing{
+    40%,
+    60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+.julius{
+    padding-left: 300px;
+    padding-top: 50px;
+}
+.julius h2{
+    position: absolute;
+    /* color: #fff; */
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+}
+.julius h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px #45f3ff;
+}
+.julius h2:nth-child(2){
+    color: #45f3ff;
+    animation: animates 2s ease-in-out infinite;
+}
+@keyframes animates{
+    0%, 100%
+    {
+        clip-path: polygon(0% 51%, 10% 48%, 20% 54%, 36% 58%, 46% 58%, 57% 56%, 75% 52%, 90% 49%, 98% 48%, 100% 48%, 99% 100%, 0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(1% 53%, 8% 57%, 14% 62%, 24% 64%, 37% 60%, 46% 54%, 54% 53%, 61% 54%, 68% 58%, 76% 59%, 84% 55%, 91% 51%, 97% 51%, 100% 51%, 100% 99%, 1% 99%);
+    }
+}
+@media (max-width:475px) {
+    body{
+        width: 90%;
+        max-width: 100%;
+    }
+    header{
+        height: 100vh;
+    }
+    .lines{
+        height: 300px;
+        width: 300px;
+    }
+    .firstside{
+        padding-top:70px ;
+        margin-bottom: 50px;
+        text-align: center;
+        align-items: center;
+    }
+    .firstside h1{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
+    .firstside p{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        width: 400px;
+        margin: auto;
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .static-text{
+        margin-left: 80px;
+        font-size: 15px;
+        font-weight: 900;
+        width: 30%;
+    }
+    #dynamic-text{
+        width: 60%;
+    }
+    #dynamic-text li span{
+        font-size: 35px;
+    }
+    .wrapper #dynamic-text{
+        margin-left: 15px;
+        line-height: 80px;
+        height: 90px;
+        margin-top: 20px;
+        overflow: hidden;
+    
+    }
+    #dynamic-text li::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 100%;
+        background-color:#333 ;
+        width: 100%;
+        animation: typing 3s steps(15) infinite;
+        /* border-left: 2px solid #ff3c7b; */
+    }
+    .julius h2{
+        font-size: 60px;
+        margin-top: -20px;
+        margin: auto;
+    }
+    .card{
+        height: 700px;
+        width: 300px;
+
+    }
+    .containers{
+        margin-top: 180px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .circles {
+        margin: 30px auto;
+    }
+    .circles2 {
+        margin: 30px auto;
+    }
+    .circles3 {
+        margin: 30px auto;
+    }
+    .circles4 {
+        margin: 30px auto;
+    }
+   .card .contents{
+        position: absolute;
+        width: 100%;
+        height: 620px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .details{
+        padding-top: 470px;
+        height: 400px;
+        position: relative;
+        top: -160px;
+    }
+    .text{
+        margin-top: 20px;
+    }
+    article{
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    article .container{
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+    .container ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .card2{
+        height: 250px;
+        width: 90%;
+    }
+    .myBtns{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
+    .myBtns a{
+        margin: 40px 0;
+    }
+}

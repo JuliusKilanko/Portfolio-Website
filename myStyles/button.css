@@ -1,0 +1,29 @@
+.actionBtn a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid #45f3ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #45f3ff;
+}
+.actionBtn{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.actionBtn a:nth-child(2){
+    background: #fff;
+    border: 0;
+}
+.actionBtn a:nth-child(2):hover{
+    background-color: transparent;
+    color: #45f3ff;
+    border: solid 2px #45f3ff;
+}
+.actionBtn a:nth-child(1):hover{
+    background: transparent;
+    color: #45f3ff;
+}

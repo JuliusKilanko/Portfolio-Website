@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Nunito', sans-serif;
+}
+body{
+    
+    min-height: 100vh; 
+    height: 100vh;
+    background: #333;
+}
+header{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width:475px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        gap: 50px;
+    }
+    .card{
+        flex-grow: 1;
+    }
+    /* .firstside{
+        width: 90%;
+        text-align: center;
+
+    }
+    .firstside h1{
+        font-size: 25px;
+    } */
+    .wrapper{
+        width: 80%;
+    }
+    .wrapper .static-text{
+        font-size: 14px;
+    }
+}
+.card{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background-color: #333;
+    transition: 0.5s;
+
+}
+.card:hover{
+    height: 450px;
+}
+.card .lines{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+
+}
+.card .lines:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #45f3ff,#45f3ff,#45f3ff, transparent);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.card .lines:after{
+    position: absolute;
+    content: '';
+    inset: 3px;
+    background: #333;
+}
+.card .imgs{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #000;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+}
+.card:hover .imgs{
+    width: 250px;
+    height: 250px;
+}
+.card .imgs:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(transparent, #ff3c7b,#ff3c7b,#ff3c7b, transparent);
+    animation: animate12 4s linear infinite;
+}
+@keyframes animate12{
+    0%
+    {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.card .imgs:after{
+    position: absolute;
+    content: '';
+    inset: 3px;
+    background: #333;
+}
+.card .imgs img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width:calc(100% - 20px);
+    height:calc(100% - 20px);
+    filter: grayscale(1);
+    cursor: pointer;
+}
+.card .imgs:hover img{
+    filter: none;
+}
+.card .contents{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card .contents .details{
+    padding: 40px;
+    width: 100%;
+    margin-top: 250px;
+    transition: 0.5s;
+    transform: translateX(0px);
+    text-align: center;
+}
+
+.card .contents .details h2{
+    color: #45f3ff;
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+.card .contents .details h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    color: white;
+}
+.card .contents .details .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.card .contents .details .data h3{
+    font-size: 1em;
+    color: #45f3ff;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.card .contents .details .data h3 span{
+    font-size: 0.85em;
+    font-weight: 400;
+    color: white;
+}
+.textanimate{
+    width: 700px;
+    height: 500px;
+    border: solid 2px red;
+}
+.alllastcontents{
+    display: block;
+    width: 150px;
+}
+footer p{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    color: #45f3ff;
+}
+footer span{
+    color: #ff3c7b;
+}

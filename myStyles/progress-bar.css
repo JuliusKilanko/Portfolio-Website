@@ -1,0 +1,281 @@
+.containers{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.first-bar{
+    width: 200px;
+    /* background-color: white; */
+    border-radius: 8px;
+    padding: 40px 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+}
+.first-bar .circular-progress{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: conic-gradient(#ff3c7b 3.6deg, #ededed 0deg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+/*second-bar*/
+.second-bar{
+    width: 200px;
+    /* background-color: white; */
+    border-radius: 8px;
+    padding: 40px 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+}
+.second-bar .circular-progress{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: conic-gradient(#ff3c7b 3.6deg, #ededed 0deg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+/*Third-bar*/
+/*.third-bar{
+    width: 200px;
+    border-radius: 8px;
+    padding: 40px 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+}
+.third-bar .circular-progress{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: conic-gradient(#ff3c7b 3.6deg, #ededed 0deg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}*/
+/*Fourth-bar*/
+/*.fourth-bar{
+    width: 200px;
+    border-radius: 8px;
+    padding: 40px 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+}
+.fourth-bar .circular-progress{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: conic-gradient(#ff3c7b 3.6deg, #ededed 0deg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-bottom: 20px;
+
+}
+.circular-progress::before{
+    content: '';
+    position: absolute;
+    height: 110px;
+    width: 110;
+    border-radius: 50%;
+    background-color:#fff;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.progress-value{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff3c7b;
+}*/
+.text{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ff3c7b;
+    /* padding-top: 80px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.circles{
+    position: relative;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*circles2*/
+.circles2{
+    position: relative;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*circles3*/
+.circles3{
+    position: relative;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Circles4*/
+.circles4{
+    position: relative;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    position: relative;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -2px -2px 20px -1px rgba(17, 3, 3, 0.616);
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(15, 11, 11, 0.548),
+           -0.5px -0.5px 0px rgba(255, 255, 255, 0.1),
+           1px 1px 5px rgba(0, 0, 0, 0.15),
+           0px 12px 4px -10px rgba(0, 0, 0, 0.05);
+}
+#number{
+    font-weight: 600px;
+    color: #ededed;
+    text-transform: uppercase;
+
+}
+#number1{
+    font-weight: 600px;
+    color: #ededed;
+    text-transform: uppercase;
+
+}
+#number2{
+    font-weight: 600px;
+    color: #ededed;
+    text-transform: uppercase;
+
+}
+#number3{
+    font-weight: 600px;
+    color: #ededed;
+    text-transform: uppercase;
+
+}
+circle{
+    fill: none;
+    stroke:url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+.circles3 circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation:  animated 3s linear forwards;
+}
+@keyframes animated{
+    100%{
+        stroke-dashoffset: 60;
+    }
+}
+.circles2 circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation:  animations 3s linear forwards;
+}
+@keyframes animations{
+    100%{
+        stroke-dashoffset: 150;
+    }
+}
+.circles4 circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation:  animational 3s linear forwards;
+}
+@keyframes animational{
+    100%{
+        stroke-dashoffset: 100;
+    }
+}
+
+.circles svg{
+    position: absolute;
+    top: -41px;
+    left: 0;
+}
+.circles2 svg{
+    position: absolute;
+    top: -41px;
+    left: 0;
+}
+.circles3 svg{
+    position: absolute;
+    top: -41px;
+    left: 0;
+}
+.circles4 svg{
+    position: absolute;
+    top: -41px;
+    left: 0;
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 100;
+    }
+}

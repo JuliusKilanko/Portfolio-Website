@@ -1,0 +1,122 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #27282c;
+} */
+.myBtns{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* gap: 120px; */
+    margin-top: 25px;
+    padding-bottom: 200px;
+}
+.myBtns a{
+    position: relative;
+    padding:  16px 30px;
+    font-size: 1.5rem;
+    color: var(--clr);
+    text-shadow: 0 0 15px var(--clr);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.9s;
+    border: solid 2px rgb(0, 0, 0.5);
+}
+.myBtns a:hover{
+    color: #fff;
+    border: solid 2px rgb(0, 0, 0, 0);
+    text-shadow: 0 0 0px var(--clr);
+}
+.myBtns a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr);
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.myBtns a:hover::before{
+    transform: scale(1);
+    transition-delay: 0.5s;
+    box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 60px var(--clr);
+}
+.myBtns a span{
+    position: absolute;
+    background: var(--clr);
+    pointer-events: none;
+    box-shadow: 0 0 10px var(--clr),
+    0 0 20px var(--clr),
+    0 0 30px var(--clr),
+    0 0 50px var(--clr),
+    0 0 100px var(--clr);
+}
+.myBtns a span:nth-child(1),
+.myBtns a span:nth-child(3){
+    width: 40px;
+    height: 4px;
+}
+.myBtns a span:nth-child(2),
+.myBtns a span:nth-child(4){
+    width: 4px;
+    height: 30px;
+}
+.myBtns a span:nth-child(1){
+    top: calc(50% - 0px);
+    left: -50px;
+    transform-origin: left;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+.myBtns a:hover span:nth-child(1){
+    left: 50%;
+    transform: translateX(0);
+    opacity: 0;
+    transition-delay: 0s;
+}
+.myBtns a span:nth-child(3){
+    top: calc(50% - 0px);
+    right: -50px;
+    transform-origin: right;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+.myBtns a:hover span:nth-child(3){
+    right: 50%;
+    transform: translateX(0);
+    opacity: 0;
+    transition-delay: 0s;
+}
+.myBtns a span:nth-child(2){
+    left: calc(50% - 0px);
+    top: -50px;
+    transform-origin: top;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+.myBtns a:hover span:nth-child(2){
+    top: 50%;
+    transform: translateX(0);
+    opacity: 0;
+    transition-delay: 0s;
+}
+.myBtns a span:nth-child(4){
+    left: calc(50% - 0px);
+    bottom: -50px;
+    transform-origin: bottom;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+.myBtns a:hover span:nth-child(4){
+    bottom: 50%;
+    transform: translateX(0);
+    opacity: 0;
+    transition-delay: 0s;
+}
